@@ -1,0 +1,299 @@
+
+/*? Paleta de colores */
+/* 
+#5F9EA0
+#555A88
+rgb(250, 73, 73)
+
+ejmplo@email.com
+Contraseña
+Nombre
+Ejemplo
+
+*/
+
+:root {
+  --color_1: #FFFFFF;
+  --color_2: #555A88;
+  --color_3: #FA4949;
+}
+
+/*! Inicio Componente App */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100wh;
+  height: 100vh;
+  padding: 3em;
+  overflow-y: scroll;
+  background-color: #f0f0f0;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5em;
+}
+
+.container__h1 {
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.container__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.2em;
+  width: 10em;
+  height: 2.5em;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: var(--color_1);
+  background-color: var(--color_2);
+  transition: transform 100ms ease;
+  transition: box-shadow 100ms ease;
+}
+
+.container__button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container__img {
+  width: 1.5em;
+}
+
+.container__FormUser {}
+
+.container__div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2em;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5em;
+}
+
+.container__UserCard {}
+
+/*! Final Componente App */
+
+/*! Inicio Componente FormUser */
+/*
+.modal__FormUser {}
+
+.container__FormUser {
+  display: flex;
+  justify-content: center;
+  margin: 5em 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2em;
+  width: 300px;
+  padding: 2em;
+  background-color: var(--color_1);
+  box-shadow: 4px 4px 7px  rgba(0, 0, 0, 0.3);
+}
+
+.form__h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.form__div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.6em;
+  color: #000;
+  margin-bottom: 1em;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+  background: transparent;
+}
+
+.form__label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 1rem 0;
+  font-size: 1.6em;
+  color: #bebdbd;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:valid ~ .form__label {
+  top: -25px;
+  font-size: 1.2em;
+  color: var(--color_2);
+}
+
+.birthday {
+  color: #aaaaaa00;
+}
+
+//! Agregar apertura de comentario aquí
+.form__label {
+  font-size: 1.5em;
+}
+
+.form__input {
+  width: 100%;
+  height: 2em;
+  font-size: 1.5em;
+  background-color: #f0f0f0;
+}
+//! Agregar cierre de comentario aquí
+
+.form__button {
+  width: 100%;
+  height: 2em;
+  border-radius: 0.3em;
+  font-size: 1.5em;
+  color: var(--color_1);
+  background-color: var(--color_2);
+  transition: transform 100ms ease;
+  transition: box-shadow 100ms ease;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+*/
+/*! Final Componente FormUser */
+
+/*! Inicio Componente UserCard */
+
+.container__UserCard {}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2em;
+  padding: 1.5em;
+  background-color: var(--color_1);
+  box-shadow: 4px 4px 7px  rgba(0, 0, 0, 0.3);
+}
+
+.article__h3 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.article__ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  margin-left: 1em;
+}
+
+.article__li {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.2em;
+  font-size: 1.4em;
+}
+
+.article__span {
+  display: flex;
+  align-items: center;
+  column-gap: 0.2em;
+}
+
+.span1 {
+  color: var(--color_2);
+  font-weight: 500;
+}
+
+.article__img {
+  width: 1em;
+}
+
+.article__buttons {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1em;
+  width: 100%;
+}
+
+.article__button {
+  width: 3em;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  transition: transform 100ms ease;
+  transition: box-shadow 100ms ease;
+}
+
+.article__button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.delete {
+  background-color: var(--color_3);
+}
+
+.edit {
+  background-color: var(--color_2);
+}
+
+/*! Final Componente UserCard */
+
+/*! Inicio Media queries */
+
+@media (max-width: 1300px) {
+  .container {
+    padding: 3em;
+  }
+
+  .container__div {
+    grid-template-columns: repeat(3, 1fr);
+    
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    padding: 3em;
+  }
+
+  .container__div {
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 3em;
+  }
+
+  .container__div {
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+}
+
+/*! Final Media queries */

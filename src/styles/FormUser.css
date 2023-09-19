@@ -1,0 +1,153 @@
+/*
+.modal__FormUser {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0003;
+}
+*/
+.modal__FormUser {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0003;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 200ms ease;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2em;
+  width: 300px;
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  background-color: var(--color_1);
+  box-shadow: 4px 4px 7px  rgba(0, 0, 0, 0.3);
+  transition: transform 500ms ease;
+}
+
+.form__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 0.4em;
+  background-color: var(--color_3);
+  transition: transform 100ms ease;
+  transition: box-shadow 100ms ease;
+}
+
+.form__close:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.close.form {
+  transform: scale(0);
+  z-index: -1;
+}
+
+.close.modal__FormUser {
+  opacity: 0;
+  z-index: -1;
+}
+
+.form__h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.form__div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+  width: 100%;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.6em;
+  color: #000;
+  margin-bottom: 1em;
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  outline: none;
+  background: transparent;
+}
+
+.form__label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 1rem 0;
+  font-size: 1.6em;
+  color: #bebdbd;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.form__input:focus ~ .form__label,
+.form__input:valid ~ .form__label {
+  top: -25px;
+  font-size: 1.2em;
+  color: var(--color_2);
+}
+
+.birthday {
+  color: #aaaaaa00;
+}
+
+/* 
+.form__label {
+  font-size: 1.5em;
+}
+
+.form__input {
+  width: 100%;
+  height: 2em;
+  font-size: 1.5em;
+  background-color: #f0f0f0;
+}
+*/
+
+.form__button {
+  width: 100%;
+  height: 2em;
+  border-radius: 0.3em;
+  font-size: 1.5em;
+  color: var(--color_1);
+  background-color: var(--color_2);
+  transition: transform 100ms ease;
+  transition: box-shadow 100ms ease;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*! Inicio Media queries */
+
+@media (max-width: 310px) {
+  .form {
+    width: 95%;
+  }
+}
+
+@media (max-height: 600px) {
+  .form {
+    margin: 3em 0;
+  }
+}
+
+/*! Final Media queries */
