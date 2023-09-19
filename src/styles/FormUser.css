@@ -103,7 +103,9 @@
 }
 
 .birthday {
-  color: #aaaaaa00;
+  top: -25px;
+  font-size: 1.2em;
+  color: var(--color_2);
 }
 
 /* 
@@ -148,6 +150,11 @@
   .form {
     margin: 3em 0;
   }
+
+  .form__input:focus ~ .form__label,
+  .form__input:valid ~ .form__label {
+    top: -30px;
+}
 }
 
 /*! Final Media queries */
