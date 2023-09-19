@@ -6,14 +6,14 @@
 }
 */
 .modal__FormUser {
+  position: fixed;
   display: flex;
   justify-content: center;
+  top: 0;
+  left: 0;
   width: 100%;
   min-height: 100vh;
   background-color: #0003;
-  position: fixed;
-  top: 0;
-  left: 0;
   transition: opacity 200ms ease;
 }
 

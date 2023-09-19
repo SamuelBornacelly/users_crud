@@ -75,7 +75,7 @@ Ejemplo
   grid-template-columns: repeat(4, 1fr);
   gap: 2em;
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 5em;
 }
 
@@ -194,6 +194,11 @@ Ejemplo
   padding: 1.5em;
   background-color: var(--color_1);
   box-shadow: 4px 4px 7px  rgba(0, 0, 0, 0.3);
+  transition: transform 200ms ease;
+}
+
+.article:hover {
+  transform: translate(0, -10px);
 }
 
 .article__h3 {
