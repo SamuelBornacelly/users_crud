@@ -20,7 +20,6 @@ const useFetch = (baseUrl, callback) => {
     const url = `${baseUrl}${path}/`
     axios.post(url, data)
       .then(res => {
-        console.log(res.data)  //!BORRAR
         setInfoApi([...infoApi, res.data])
         callback(true)
       })
@@ -33,7 +32,6 @@ const useFetch = (baseUrl, callback) => {
     const url = `${baseUrl}${path}/${id}/`
     axios.delete(url)
       .then(res => {
-        console.log(res.data)  //!BORRAR
         setInfoApi(infoApi.filter(e => e.id !== id))
       })
       .catch(err => console.log(err))
