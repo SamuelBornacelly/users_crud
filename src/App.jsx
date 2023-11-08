@@ -11,7 +11,7 @@ function App() {
 
   const [infoUpdate, setInfoUpdate] = useState()
 
-  const baseUrl = `https://users-crud-backend-dev-xfap.3.us-1.fl0.io`
+  const baseUrl = `https://users-crud.academlo.tech`
   const [ users, getUsers, createUser, deleteUser, updateUser ] = useFetch(baseUrl, setCloseForm)
   useEffect(() => {
     getUsers('/users')
